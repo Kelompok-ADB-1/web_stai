@@ -84,6 +84,15 @@ body {
 
 
 
+.nav-link {
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.nav-link:hover {
+    color: var(--primary-main);
+}
+
 
 .nav-item {
     padding: 0px;
