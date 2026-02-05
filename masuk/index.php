@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAI Sabilu Salam Bandung</title>
+
+    <link rel="icon" type="image/svg+xml" href="../logo_stai-01.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- link external css -->
+    <link href="../style.css" rel="stylesheet">
+	
+	<style>
+	
+				
+
+			/* --- Container Utama --- */
+			.container {
+				width: 100%;
+				width: 400px;
+				padding: 20px;
+			}
+
+			/* --- Kotak Form Login --- */
+			.login-form {
+				background-color: #ffffff;
+				padding: 20px 40px;
+				border-radius: 10px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+
+			.login-form h2{
+				font-size: 27px;
+				font-weight: 600;
+				color: var(--gray);
+				margin-bottom: 5px;
+			}
+
+			.login-form h4{
+				font-size: 16px;
+				font-weight: 400;
+				color: var(--gray);
+				margin-bottom: 30px;
+			}
+
+			.login-form a{
+				color: var(--primary-main);
+				text-decoration: none;
+			}
+
+			/* --- Grup Form (Label + Input) --- */
+			.form-group {
+				margin-bottom: 15px;
+				text-align: left;
+			}
+
+			.form-group label {
+				display: block;
+				font-size: 12px;
+				color: #606770;
+				font-weight: 600;
+				margin-bottom: 5px;
+			}
+
+			/* --- Style untuk Input Field --- */
+			.form-group input[type="text"],
+			.form-group input[type="password"] {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #dddfe2;
+				border-radius: 6px;
+				font-size: 16px;
+				transition: border-color 0.2s, box-shadow 0.2s;
+			}
+
+			/* Efek saat input di-klik (focus) */
+			.form-group input[type="text"]:focus,
+			.form-group input[type="password"]:focus {
+				outline: none;
+				border-color:  var(--primary-main);
+				box-shadow: 0 0 0 2px #e7f3ff;
+			}
+
+			/* --- Style untuk Tombol Login --- */
+			button[type="submit"] {
+				width: 100%;
+				padding: 12px;
+				margin-bottom: 9px;
+				background-color: var(--primary-main);
+				border: none;
+				border-radius: 6px;
+				color: #fff;
+				font-size: 18px;
+				font-weight: bold;
+				cursor: pointer;
+				transition: background-color 0.2s;
+			}
+
+			/* Efek saat tombol di-hover (cursor di atasnya) */
+			button[type="submit"]:hover {
+				background-color: var(--primary-dark);
+			}
+
+			/* Efek saat tombol di-klik */
+			button[type="submit"]:active {
+				transform: scale(0.98);
+			}
+
+
+	
+	</style>
+	
+    
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid position-relative">
+
+    <!-- LEFT: Logo -->
+    <div class="d-flex align-items-center" style="width: 260px;">
+		<div class="d-flex align-items-center" style="width: 100%;">
+		  <a class="navbar-brand-main d-flex align-items-center" href="../" style="width: 100%; white-space: nowrap;">
+			<img src="../logo_stai-01.svg" alt="Logo" style="max-height:55px" class="me-2">
+			<div class="lh-sm">
+			  <span class="d-block">Sekolah Tinggi Agama Islam</span>
+			  <strong>SABILU SALAM</strong>
+			</div>
+		  </a>
+		</div>
+    </div>
+
+	
+    <!-- CENTER: True center menu
+    <div class="position-absolute top-50 start-50 translate-middle d-none d-lg-block">
+      <ul class="navbar-nav flex-row gap-3 align-items-center">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Jurusan</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Hukum Ekonomi Syariah</a></li>
+            <li><a class="dropdown-item" href="#">Pendidikan Agama Islam</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Seleksi</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../petunjuk-pendaftaran/index.html">Petunjuk Pendaftaran</a></li>
+            <li><a class="dropdown-item" href="#">Biaya Pendidikan</a></li>
+            <li><a class="dropdown-item" href="#">Jalur Seleksi</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+
+      </ul>
+    </div> -->
+
+    <!-- RIGHT: Button -->
+    <div class="ms-auto d-none d-lg-flex">
+      <a class="btn btn-outline-success d-flex align-items-center gap-1 m-1" href="../daftar/">
+        Masuk
+      </a>
+
+      <a class="btn btn-success d-flex align-items-center gap-1 m-1" href="../daftar/">
+        Daftar
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- landing page disini -->
+<div class="landing">
+    <div class="bg-main">
+        <img src="../div_bg.png" alt="Background">
+    </div>
+
+    <div class="content-landing">
+        
+		
+		<div class="container">
+			<div class="login-form">
+				<h2>Masuk</h2>
+                <h4>Belum punya akun? <a href="../daftar/">Daftar</a></h4>
+				<form action="./login.php" method="post">
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email" required placeholder="">
+					</div>
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" required placeholder="">
+					</div>
+					<button type="submit">Daftar</button>
+				</form>
+			</div>
+		</div>
+
+		
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
