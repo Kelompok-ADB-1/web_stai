@@ -171,7 +171,7 @@
 
     <!-- RIGHT: Button -->
     <div class="ms-auto d-none d-lg-flex">
-      <a class="btn btn-outline-success d-flex align-items-center gap-1 m-1" href="../masuk/">
+      <a class="btn btn-outline-success d-flex align-items-center gap-1 m-1" href="../daftar/">
         Masuk
       </a>
 
@@ -201,9 +201,9 @@
 		
 		<div class="container">
 			<div class="login-form">
-				<h2>Daftar Sekarang</h2>
-				<h4>Sudah punya akun PMB? <a href="../masuk/">Masuk</a></h4>
-				<form action="daftar.php" method="post">
+				<h2>Masuk</h2>
+                <h4>Belum punya akun? <a href="../daftar/">Daftar</a></h4>
+				<form action="./login.php" method="post">
 					<div class="form-group">
 						<label for="email">Email:</label>
 						<input type="text" id="email" name="email" required placeholder="">
@@ -211,10 +211,6 @@
 					<div class="form-group">
 						<label for="password">Password:</label>
 						<input type="password" id="password" name="password" required placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="confirmpassword">Confirm Password:</label>
-						<input type="password" id="confirmpassword" name="confirmpassword" required placeholder="">
 					</div>
 					<button type="submit">Daftar</button>
 				</form>

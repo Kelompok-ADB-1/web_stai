@@ -26,7 +26,7 @@
 ================================ */
 :root {
     --primary-main: #109335;
-    --primary-dark: #1A6034;
+    --primary-dark: #005317;
     --primary-light: #ADCE24;
 
     --accent-main: #F9A856;
@@ -36,17 +36,17 @@
     --alternative-darker: #136EA6;
 
     --black: #000;
+    --gray: #2f2f2f;
 }
 
 
 /* ================================
    BASE LAYOUT
 ================================ */
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: auto;
     font-family: "Signika", sans-serif;
 }
 
@@ -83,15 +83,6 @@ body {
 }
 
 
-
-.nav-link {
-    font-weight: 500;
-    color: var(--primary-dark);
-}
-
-.nav-link:hover {
-    color: var(--primary-main);
-}
 
 
 .nav-item {
@@ -222,4 +213,14 @@ body {
     text-align: center;
     padding: 2rem;
 }
+
+
+
+/* ================================
+   TEXT FORMAT
+================================ */
+
+
+
+
 
