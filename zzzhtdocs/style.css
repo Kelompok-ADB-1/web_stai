@@ -1,0 +1,59 @@
+/* Color Variables */
+:root {
+    --primary-main: #109335;
+    --primary-dark: #1A6034;
+    --primary-light: #b8dd25;
+    --accent-main: #F9A856;
+    --accent-dark: #5B371E;
+    --alternative-main: #008FD7;
+    --alternative-darker: #136EA6;
+    --black: #000;
+}
+
+/* Base Styles */
+html,
+body {
+    overflow: visible;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    font-family: "Signika", sans-serif;
+}
+
+/* Component Styles */
+
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    max-height: 500px;
+    width: 100%;
+    z-index: 1;
+}
+
+.bg-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bg-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    pointer-events: none;
+}
+
+.content-landing {
+    position: relative;
+    z-index: 2;
+    color: var(--primary-main);
+    text-align: center;
+    padding: 2rem;
+}
